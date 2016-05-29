@@ -1,0 +1,11 @@
+{
+ "tempAlertTooHigh":92.01
+, "tempWarnTooHigh":85.01
+, "tempWarnTooLow":65
+, "tempAlertTooLow":55
+, "humidityAlertTooHigh":74.01
+, "humidityWarnTooHigh":72.01
+, "humidityWarnTooLow":62.99
+, "humidityAlertTooLow":58
+}
+

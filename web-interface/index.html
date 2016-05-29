@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Humidor</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <script src="js/raphael-2.1.4.min.js"></script>
+    <script src="js/justgage-1.1.0.min.js"></script>
+    <script src="js/angular.min.js"></script>
+  </head>
+  <body>
+   <div ng-app="myApp" ng-Controller="readingCtrl" style="display:inline-block;">
+      <div style="display:inline-block;" id="Humidity" style="height:300px; width:500px;"></div>
+      <div style="display:inline-block;" id="TemperatureF" style="height:300px;width:500px;"></div>
+        <div style="text-align:center;" id="C">Humidor lid is {{openclose}}</div>
+        <div style="text-align:center;" id="T">{{timestamp}}</div>
+      
+      <div id="rawValues" style="display:none;border:solid;vertical-align:top;">
+          <div style="display:inline-block;" id="TF">Temp F: {{tempF}} /</div>
+          <div style="display:inline-block;" id="TC">Temp C: {{tempC}} /</div>
+          <div style="display:inline-block;" id="H">Humidity: {{hum}}%</div>
+      </div>
+
+    </div>
+
+   <script src="js/main.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
